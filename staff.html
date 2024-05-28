@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Management System - Staff Login</title>
+    <link rel="stylesheet" href="/RestoMania/CSS/staff.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .login-container, .dashboard-container {
+            width: 300px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .login-container input, .dashboard-container button {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+        }
+        .dashboard-container {
+            display: none;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        table, th, td {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: left;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+<div class="login-container" id="login-container">
+    <h2>Staff Login</h2>
+    <input type="text" id="username" placeholder="Username">
+    <input type="password" id="password" placeholder="Password">
+    <br>
+    <button class="button-77" onclick="login()">Login</button>
+</div>
+
+<div class="dashboard-container" id="dashboard-container">
+    <h2>Dashboard</h2>
+    <p>Live Orders: <span id="live-orders">5</span></p>
+    <button onclick="showOrderManagement()">Order Management</button>
+    <button onclick="showTableOverview()">Table Overview</button>
+    
+    <div id="order-management" class="hidden">
+        <h3>Order Management</h3>
+        <table>
+            <tr>
+                <th>Table Number</th>
+                <th>Ordered Items</th>
+                <th>Order Status</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Paneer Tikka, French Fries</td>
+                <td><input type="text" placeholder="Status"></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Steamed Momos</td>
+                <td><input type="text" placeholder="Status"></td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>Veg Pokora, Oragne Juice</td>
+                <td><input type="text" placeholder="Status"></td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Sandwitch, Coffee</td>
+                <td><input type="text" placeholder="Status"></td>
+            </tr>
+        </table>
+    </div>
+    
+    <div id="table-overview" class="hidden">
+        <h3>Table Overview</h3>
+        <table>
+            <tr>
+                <th>Table Number</th>
+                <th>Status</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Occupied</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Vacant</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Vacant</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Occupied</td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+<script>
+    function login() {
+        // Example login validation
+        var username = document.getElementById('username').value;
+        var password = document.getElementById('password').value;
+        
+        if (username === "staff" && password === "password") {
+            document.getElementById('login-container').style.display = 'none';
+            document.getElementById('dashboard-container').style.display = 'block';
+        } else {
+            alert("Invalid credentials, please try again.");
+        }
+    }
+
+    function showOrderManagement() {
+        document.getElementById('order-management').classList.remove('hidden');
+        document.getElementById('table-overview').classList.add('hidden');
+    }
+
+    function showTableOverview() {
+        document.getElementById('table-overview').classList.remove('hidden');
+        document.getElementById('order-management').classList.add('hidden');
+    }
+</script>
+
+</body>
+</html>

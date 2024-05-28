@@ -1,0 +1,229 @@
+/* Importing a modern, professional font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.navbar {
+    background-color: #d35400;
+    color: #fff;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.nav-logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+    font-size: 2em;
+    font-style: italic;
+    font-weight: bolder;
+}
+
+.nav-logo-img {
+    width: 80px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-item {
+    margin-left: 20px;
+}
+
+.nav-link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1em;
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: #4CAF50;
+}
+
+.nav-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.nav-toggle .bar {
+    height: 3px;
+    width: 25px;
+    background-color: #fff;
+    margin: 4px 0;
+    transition: all 0.3s;
+}
+
+.container {
+    width: 90%;
+    max-width: 900px;
+    margin: 40px auto;
+    background-color: #FFA732;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-image: url('https://www.transparenttextures.com/patterns/debut-light.png');
+}
+
+h1 {
+    text-align: center;
+    color: #444;
+    margin-bottom: 30px;
+    font-size: 2em;
+    font-weight: 700;
+}
+
+.section {
+    margin-bottom: 30px;
+}
+
+.section p {
+    font-size: 1.2em;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.table-input, .order-status {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.table-input input, .order-status select {
+    padding: 10px 15px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 180px;
+    transition: border-color 0.3s;
+}
+
+.table-input input:focus, .order-status select:focus {
+    border-color: #4CAF50;
+}
+
+.order-items table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.order-items th, .order-items td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
+
+.order-items th {
+    background-color: #f9f9f9;
+    font-weight: 500;
+}
+
+.total-amount {
+    text-align: right;
+    font-size: 1.5em;
+    color: #444;
+    font-weight: 700;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #e7f3e7;
+    border: 1px solid #c2e0c2;
+    border-radius: 5px;
+}
+
+.actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.actions button {
+    padding: 15px 30px;
+    font-size: 1.1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.confirm-btn {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.confirm-btn:hover {
+    background-color: #45a049;
+}
+
+.menu-btn {
+    background-color: #f44336;
+    color: white;
+}
+
+.menu-btn:hover {
+    background-color: #e53935;
+}
+
+@media (max-width: 768px) {
+    .nav-menu {
+        flex-direction: column;
+        width: 100%;
+        display: none;
+    }
+
+    .nav-item {
+        margin: 10px 0;
+    }
+
+    .nav-toggle {
+        display: flex;
+    }
+
+    .nav-menu.active {
+        display: flex;
+    }
+
+    .table-input, .order-status {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .table-input input, .order-status select {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .actions {
+        flex-direction: column;
+    }
+
+    .actions button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}

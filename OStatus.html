@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Order Status Checker</title>
+    <link rel="stylesheet" href="/RestoMania/CSS/OStatus.css">
+</head>
+<body>
+    <header>
+        <img src="/RestoMania/images/Restomania.png" alt="Restaurant Logo" class="logo">
+        <nav class="navbar">
+            <a href="/RestoMania/index.html">Home</a>
+            <a href="/RestoMania/menu.html">Menu</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <section class="status-checker">
+            <h2>Check Your Order Status</h2>
+            <form id="order-form">
+                <label for="order-id">Order ID:</label>
+                <input type="text" id="order-id" name="order-id" required>
+                <button type="submit">Check Status</button>
+            </form>
+            <div id="order-status" class="hidden">
+                <h3>Order Status</h3>
+                <p id="status-message"></p>
+            </div>
+        </section>
+        <section class="image-gallery">
+            <img src="/RestoMania/images/ORDER_STATUS/food1.png" alt="Delicious Food 1" class="gallery-image">
+            <img src="/RestoMania/images/ORDER_STATUS/food2.png" alt="Delicious Food 2" class="gallery-image">
+            <img src="/RestoMania/images/ORDER_STATUS/food3.png" alt="Delicious Food 3" class="gallery-image">
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 RestoMania. All rights reserved.</p>
+    </footer>
+    <script src="/RestoMania/JavaScript/OStatus.js"></script>
+</body>
+</html>

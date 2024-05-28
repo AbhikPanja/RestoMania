@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Billing Page - Restaurant Management System</title>
+    <link rel="stylesheet" href="/RestoMania/CSS/cart.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="/RestoMania/index.html" class="nav-logo">
+                <img src="/RestoMania/images/Restomania.png" alt="Logo" class="nav-logo-img">
+                Resto Mania
+            </a>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="/RestoMania/index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="/RestoMania/menu.html" class="nav-link">Menu</a></li>
+                <li class="nav-item"><a href="/RestoMania/OStatus.html" class="nav-link">Orders</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <h1>Restaurant Billing Page</h1>
+        
+        <div class="section cart-summary">
+            <h2>Cart Summary</h2>
+            <!-- Add more details as needed -->
+        </div>
+        
+        <div class="section table-input">
+            <label for="table-number">Table Number:</label>
+            <input type="number" id="table-number" name="table-number" placeholder="Enter table number">
+        </div>
+        
+        <div class="section order-status">
+            <label for="status">Order Status:</label>
+            <p id="status">Confirm</p>
+        </div>
+        
+        
+        <div class="section order-items">
+            <h2>Items Ordered</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Item</th>
+                        <th>Quantity</th>
+                        <th>Cost (INR)</th>
+                    </tr>
+                </thead>
+                <tbody id="order-items-body">
+                    <tr>
+                        <td>Chicken Pokora</td>
+                        <td><input type="number" value="2" class="quantity" data-price="130"></td>
+                        <td class="cost">130</td>
+                    </tr>
+                    <tr>
+                        <td>Biriyani</td>
+                        <td><input type="number" value="1" class="quantity" data-price="150"></td>
+                        <td class="cost">150</td>
+                    </tr>
+                    <tr>
+                        <td>Orange Juice</td>
+                        <td><input type="number" value="1" class="quantity" data-price="120"></td>
+                        <td class="cost">120</td>
+                    </tr>
+                    <!-- Add more items as needed -->
+                </tbody>
+            </table>
+        </div>
+        
+        <div class="section total-amount">
+            <h2>Total Amount to be Paid: ₹<span id="total-amount">400</span></h2>
+        </div>
+        
+        <div class="actions">
+            <button class="confirm-btn" onclick="confirmOrder()">Confirm Order</button>
+            <button class="menu-btn" onclick="backToMenu()">Back to Menu</button>
+        </div>
+    </div>
+    <script defer src="/RestoMania/JavaScript/cart.js"></script>
+</body>
+</html>

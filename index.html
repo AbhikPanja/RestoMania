@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Restaurant Management</title>
+  <link rel="stylesheet" href="CSS/style.css"> <!-- Link to your CSS file -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="/RestoMania/images/Restomania.png" alt="Restaurant Logo">
+      <span class="restaurant-name ">Resto Mania</span>
+    </div>
+    <nav>
+      <button class="menu-toggle" aria-expanded="false">
+        <span class="menu-icon"></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="/RestoMania/menu.html">View Menu</a></li>
+        <li><a href="#reservations">Table Reservations</a></li>
+        <li><a href="/RestoMania/cart.html">Go to Cart</a></li>
+        <li><a href="#special-offers">Special Offers</a></li>
+        <li><a href="/RestoMania/staff.html">Staff Login</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <main>
+    <section id="featured-items">
+      <h2>Most Popular Items</h2>
+      <div class="items-container">
+        <div class="item">
+          <img src="/RestoMania/images/Menu-items/Dessert/Red-Velvet Mousie.jpeg" alt="Featured Item 1" >
+          <div class="item-details">
+            <h3>Red Velvet Mousse</h3>
+            <p class="price">₹129</p>
+          </div>
+        </div>
+        <div class="item">
+          <img src="/RestoMania/images/Menu-items/Main-Course/Karhai-chicken.jpeg" alt="Featured Item 2" >
+          <div class="item-details">
+            <h3>Kadai Chicken</h3>
+            <p class="price">₹250</p>
+          </div>
+        </div>
+        <div class="item">
+          <img src="/RestoMania/images/Menu-items/Starters/Drums-of Heaven.jpeg" alt="Featured Item 3" >
+          <div class="item-details">
+            <h3>Drums of Heaven</h3>
+            <p class="price">₹170</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Special Offers Section -->
+    <section id="special-offers">
+      <h2>Special Offers</h2>
+      <div class="offers-container">
+        <button class="arrow-left">&lt;</button> <!-- Left arrow button -->
+        <div class="offers-wrapper">
+          <div class="offer">
+            <img src="/RestoMania/images/Special-Offers/Beverages_Special Offers.jpg" alt="Offer 1">
+            <div class="offer-details">
+              <h3>20% Off on All Beverages</h3>
+              <p>Enjoy a 20% discount on all beverages every Monday.</p>
+            </div>
+          </div>
+          <div class="offer">
+            <img src="/RestoMania/images/Special-Offers/Family_meal_Special Offers.jpg" alt="Offer 2">
+            <div class="offer-details">
+              <h3>Family Meal for ₹499</h3>
+              <p>Get a family meal for just ₹499. Includes 3 drinks(any) and 2 Chinese(any).</p>
+            </div>
+          </div>
+          <div class="offer">
+            <img src="/RestoMania/images/Special-Offers/Biriyani-combo.png" alt="Offer 7">
+            <div class="offer-details">
+              <h3>Combo Meal for ₹399</h3>
+              <p>Includes 1 Biriyani, 1 starter, and 1 coke.</p>
+            </div>
+          </div>
+          <div class="offer">
+            <img src="/RestoMania/images/Special-Offers/Desserts_Special Offers.jpg" alt="Offer 3">
+            <div class="offer-details">
+              <h3>20% Off on Desserts</h3>
+              <p>Every 2nd Sundays.</p>
+            </div>
+          </div>
+          <div class="offer">
+            <img src="/RestoMania/images/Special-Offers/Kids-meal_Special Offers.jpg" alt="Offer 4">
+            <div class="offer-details">
+              <h3>Kids Eat Free on Sundays</h3>
+              <p>Kids eat free with the purchase of an adult meal on Sundays.</p>
+            </div>
+          </div>
+          <div class="offer">
+            <img src="/RestoMania/images/Special-Offers/Appetizers.jpg" alt="Offer 5">
+            <div class="offer-details">
+              <h3>Happy Hour Special</h3>
+              <p>30% off on all main-course item from 4-6 PM Friday & Satardays only.</p>
+            </div>
+          </div>
+          <div class="offer">
+            <img src="/RestoMania/images/Special-Offers/Choco-lava.jpg" alt="Offer 6">
+            <div class="offer-details">
+              <h3>Family Meal Deal</h3>
+              <p>Get a free dessert with any family meal above ₹549.</p>
+            </div>
+          </div>
+          
+          <div class="offer">
+            <img src="/RestoMania/images/Special-Offers/799 combo.png" alt="Offer 8">
+            <div class="offer-details">
+              <h3>Combo Meal for ₹799</h3>
+              <p>Includes 2 curries, 4 naans, 1 biryani, and 2 drinks(any). A true feast!</p>
+            </div>
+          </div>
+          <div class="offer">
+            <img src="/RestoMania/images/Special-Offers/South-combo.jpg" alt="Offer 9">
+            <div class="offer-details">
+              <h3>South Indian Combo for ₹359</h3>
+              <p>Includes 2 dosas, 2 idlis, and 2 coffees(any). Authentic and delicious.</p>
+            </div>
+          </div>
+        </div>
+        <button class="arrow-right">&gt;</button> <!-- Right arrow button -->
+      </div>
+    </section>
+
+    <section id="reservations">
+      <h2>Table Reservations</h2>
+      <div class="table-container">
+        <table>
+          <thead>
+            <tr>
+              <th>Table Number</th>
+              <th>Capacity</th>
+              <th>Availability</th>
+              <th>Reserve</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>4</td> <!-- Capacity of the table -->
+              <td>Available</td>
+              <td>
+                <select>
+                  <option value="1">1 person</option>
+                  <option value="2">2 people</option>
+                  <option value="3">3 people</option>
+                  <option value="4">4 people</option>
+                </select>
+                <button>Reserve</button>
+              </td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>6</td>
+              <td>Unavailable</td>
+              <td>
+                <select disabled>
+                  <option value="1">1 person</option>
+                  <option value="2">2 people</option>
+                  <option value="3">3 people</option>
+                  <option value="4">4 people</option>
+                  <option value="5">5 people</option>
+                  <option value="6">6 people</option>
+                </select>
+                <button disabled>Reserve</button>
+              </td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>2</td>
+              <td>Unavailable</td>
+              <td>
+                <select disabled>
+                  <option value="1">1 person</option>
+                  <option value="2">2 people</option>
+                </select>
+                <button disabled>Reserve</button>
+              </td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>6</td> <!-- Capacity of the table -->
+              <td>Available</td>
+              <td>
+                <select>
+                  <option value="1">1 person</option>
+                  <option value="2">2 people</option>
+                  <option value="3">3 people</option>
+                  <option value="4">4 people</option>
+                  <option value="5">5 people</option>
+                  <option value="6">6 people</option>
+                </select>
+                <button>Reserve</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+    
+  </main>
+  
+  <footer class="gradient-background">
+    <nav>
+      <ul>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#privacy">Privacy Policy</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+  <script src="/RestoMania/JavaScript/script.js"></script> <!-- Link to your JavaScript file -->
+</body>
+</html>
